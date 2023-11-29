@@ -14,10 +14,8 @@
   box-sizing: border-box;
 }
 
-a:link {
-  color: var(--color-lightest);
-}
-a:visited {
+a:link,
+:visited {
   color: var(--color-lightest);
 }
 
@@ -83,6 +81,7 @@ ul {
   grid-auto-flow: column;
   justify-content: center;
   background-color: var(--color-light);
+  border-radius: 5px;
 }
 
 .mixed p,
