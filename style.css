@@ -14,6 +14,17 @@
   box-sizing: border-box;
 }
 
+a:link {
+  color: var(--color-lightest);
+}
+a:visited {
+  color: var(--color-lightest);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--color-medium);
@@ -72,9 +83,6 @@ ul {
   grid-auto-flow: column;
   justify-content: center;
   background-color: var(--color-light);
-}
-
-.mixed div {
 }
 
 .mixed p,
