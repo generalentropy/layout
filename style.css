@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+
+:root {
+  --color-dark: rgb(22, 72, 99);
+  --color-medium: rgb(66, 125, 157);
+  --color-light: rgb(155, 190, 200);
+  --color-lightest: rgb(221, 242, 253);
+  --color-accent: rgb(255, 209, 220);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-medium);
+  color: var(--color-lightest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body h1 {
+  padding: 20px;
+}
+
+.container h1,
+h2,
+h3,
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.container h2 {
+  color: var(--color-accent);
+}
+
+.container {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  min-height: 800px;
+  min-width: 400px;
+  max-width: 400px;
+  padding: 20px;
+  background-color: var(--color-dark);
+  border-radius: 25px;
+}
+
+.box p {
+  padding: 10px 0;
+}
+
+.mixed {
+  color: var(--color-dark);
+  display: grid;
+  font-size: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
+.mixed div {
+}
+
+.mixed p,
+h4 {
+  padding: 5px;
+}
+
+.image-container {
+  display: flex;
+  overflow: hidden;
+
+  /* tu peux éventuelement spécifier une hauteur/largeur max pour l'image.
+  Sinon l'image prendra par défault toute la hauteur de son parent.
+  Parent qui lui même s'adapte en hauteur a la plus grande hauteur de son contenu */
+
+  /* max-height: 100px; */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  /* Tu peux jouer avec ces propriétés possibles :
+   fill | contain | cover | scale-down | none | initial | inherit; */
+
+  object-fit: cover;
+}
